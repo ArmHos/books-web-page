@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Assets/shopping-cart 1.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./Assets/book3.png" type="image/x-icon" />
+    <script type="module" src="./main.js" defer></script>
+    <script type="module" src="./helpers/drawBooks.js" defer></script>
+    <script type="module" src="./helpers/getBookById.js" defer></script>
+    <script type="module" src="./helpers/searchBooks.js" defer></script>
+    <script type="module" src="./helpers/getBooks.js" defer></script>
+    <script type="module" src="./helpers/logoHandler.js" defer></script>
+    <title>MyBook</title>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <div class="main-menu">
+          <div class="main-menu-logo">
+            <img src="./Assets/MYBOOK.png" alt="logo" />
+            <div class="line"></div>
+            <img src="./Assets/shopping-cart 1.png" alt="shopping-cart" />
+          </div>
+          <div class="main-menu-bar">
+            <span>Explorer</span>
+            <span>Shop</span>
+            <span class="main-menu-bar-library">My Library</span>
+          </div>
+        </div>
+        <div class="search-container">
+          <div class="welcome-text">
+            <h1>Read and add your insights</h1>
+            <p>Find your favorite book and read it here for free</p>
+          </div>
+          <div>
+            <div class="search-container-input">
+              <img src="./Assets/search 1.png" alt="search" />
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <nav>
+          <ul class="genres">
+            <h1>Book by Genre</h1>
+            <li>Programming</li>
+            <li>Business</li>
+            <li>Science</li>
+            <li>Fiction</li>
+            <li>Philosophy</li>
+            <li>Biography</li>
+          </ul>
+          <hr />
+          <ul class="recomendations">
+            <h1>Recomendations</h1>
+            <li class="my-library">My library</li>
+            <!-- <li>Book of the Year</li>
+            <li>Top Genre</li>
+            <li>Trending</li> -->
+          </ul>
+        </nav>
+        <div class="content"></div>
+      </main>
+      <footer>2023 MyBook</footer>
+    </div>
+  </body>
+</html>
